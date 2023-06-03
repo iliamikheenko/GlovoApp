@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderServiceImpl implements OrderService {
-    private List<Order> orders = new ArrayList<>();
+    private final List<Order> orders = new ArrayList<>();
 
     @Override
     public Order getById(int id) {
